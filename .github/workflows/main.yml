@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-push-images:
-    name: Budowa i publikacja obrazw na repozytorium
+    name: Budowa i publikacja obrazu na repozytorium
     runs-on: ubuntu-latest
 
     steps:
@@ -36,6 +36,6 @@ jobs:
 
       - name: Image digest
         run: |
-          echo Deploying Docker project 
+          echo Deploying Docker project
           echo $({ steps.docker_build.outputs.digest })
           
